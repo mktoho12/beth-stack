@@ -1,0 +1,25 @@
+{
+  "name": "beth-stack",
+  "module": "src/index.tsx",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --hot ./src/index.tsx",
+    "db:push": "bun x drizzle-kit push:sqlite",
+    "db:studio": "bun x drizzle-kit studio"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "drizzle-kit": "^0.19.13"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@elysiajs/html": "^0.7.0",
+    "@kitajs/html": "^2.2.2",
+    "@kitajs/ts-html-plugin": "^1.0.2",
+    "@libsql/client": "^0.3.4",
+    "drizzle-orm": "^0.28.6",
+    "elysia": "^0.7.3"
+  }
+}
